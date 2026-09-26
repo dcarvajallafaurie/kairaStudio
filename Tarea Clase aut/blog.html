@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Publicaciones | KAIRA Architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .blog-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="brand-logo">KAIRA</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="btn btn-outline">Cotizar</a>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="page-title">Artículos & Pensamiento</h1>
+      <p class="page-subtitle">Reflexiones sobre teoría arquitectónica, materiales y diseño contemporáneo.</p>
+    </div>
+
+    <div class="grid-3" style="margin-bottom: 6rem;">
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Materiales">
+        <div class="blog-content">
+          <div>
+            <p style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Materiales</p>
+            <h3 style="margin: 0.8rem 0;">El Concreto Visto en el Clima Tropical</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Estrategias de acabado para proteger el concreto expuesto de la humedad marina.</p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="/blogspace.html" class="btn btn-outline" style="width: 100%;">Leer Artículo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Luz">
+        <div class="blog-content">
+          <div>
+            <p style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Teoría</p>
+            <h3 style="margin: 0.8rem 0;">La Luz Natural como Escultura</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Cómo el uso de tragaluces y vanos orientados transforma la atmósfera de un hogar.</p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="/blogspace.html" class="btn btn-outline" style="width: 100%;">Leer Artículo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 KAIRA Architecture. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
