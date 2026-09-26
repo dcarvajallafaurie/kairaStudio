@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | KAIRA Architecture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2.5rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .service-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-5px);
+    }
+    .price-tag {
+      font-size: 1.5rem;
+      font-family: var(--font-heading);
+      color: var(--accent);
+      margin: 1.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="brand-logo">KAIRA</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="contacto.html" class="btn btn-outline">Cotizar</a>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1 class="page-title">Servicios & Soluciones</h1>
+      <p class="page-subtitle">Desde el concepto arquitectónico hasta la ejecución detallada de proyectos llave en mano.</p>
+    </div>
+
+    <section class="grid-3" style="margin-bottom: 8rem;">
+      <div class="service-card">
+        <div>
+          <span style="color: var(--accent); font-weight: 600;">01</span>
+          <h3 style="margin: 1rem 0;">Diseño Arquitectónico Residencial</h3>
+          <p style="color: var(--text-muted);">Proyectos integrales para casas campestres, villas exclusivas y complejos de apartamentos.</p>
+        </div>
+        <div>
+          <div class="price-tag">Desde $3,500 USD</div>
+          <a href="contacto.html" class="btn btn-outline" style="width: 100%;">Solicitar Propuesta</a>
+        </div>
+      </div>
+
+      <div class="service-card" style="border-color: var(--accent);">
+        <div>
+          <span style="color: var(--accent); font-weight: 600;">02 (Más Solicitado)</span>
+          <h3 style="margin: 1rem 0;">Interiorismo & Experiencia Espacial</h3>
+          <p style="color: var(--text-muted);">Diseño de interiores, selección de acabados, iluminación escénica y mobiliario a medida.</p>
+        </div>
+        <div>
+          <div class="price-tag">Solicita tu presupuesto </div>
+          <a href="contacto.html" class="btn btn-accent" style="width: 100%;">Solicitar Propuesta</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div>
+          <span style="color: var(--accent); font-weight: 600;">03</span>
+          <h3 style="margin: 1rem 0;">Consultoría BIM & Supervisión de Obra</h3>
+          <p style="color: var(--text-muted);">Modelado técnico 3D, optimización de costos y dirección técnica directa en sitio.</p>
+        </div>
+        <div>
+          <br>
+          <a href="contacto.html" class="btn btn-outline" style="width: 100%;">Solicitar Propuesta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 KAIRA Architecture. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
